@@ -1,4 +1,3 @@
-cat > .gitignore <<'EOF'
 # Python virtual environment
 venv/
 .env
@@ -16,9 +15,12 @@ __pycache__/
 # macOS
 .DS_Store
 
-# Raw and processed big data files
-data/raw/
-data/processed/
+# Ignore dataset files, but keep folder structure
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
 
 # Large model outputs
 outputs/models/
@@ -30,4 +32,3 @@ derby.log
 
 # Logs
 *.log
-EOF
