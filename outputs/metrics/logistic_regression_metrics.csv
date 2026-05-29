@@ -1,0 +1,2 @@
+model,accuracy,precision,recall,f1_score
+TF-IDF + Logistic Regression,0.8868622171555429,0.8869282675976113,0.8868622171555429,0.8868573907817514

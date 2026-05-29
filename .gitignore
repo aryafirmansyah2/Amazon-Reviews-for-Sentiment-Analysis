@@ -1,0 +1,33 @@
+cat > .gitignore <<'EOF'
+# Python virtual environment
+venv/
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Raw and processed big data files
+data/raw/
+data/processed/
+
+# Large model outputs
+outputs/models/
+
+# Spark temporary files
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Logs
+*.log
+EOF
